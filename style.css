@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+pre {
+  overflow: auto;
+  max-height: 400px;
+}
+
+.debug {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+  max-width: 1800px;
+  margin: auto;
+}
+
+.left-panel,
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+pre,
+.debug div {
+  margin: 0;
+  padding: 0.75rem;
+  border: 1px solid #555;
+  border-radius: 0.4rem;
+  overflow: auto;
+  white-space: pre;
+}
+
+.current-line {
+  background-color: #333;
+  color: #fff;
+}
+
+#registers {
+  line-height: 1.2;
+}
+
+#ProgramCounter, #StackPointer {
+  font-weight: bold;
+  font-style: italic;
+}
+

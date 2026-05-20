@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="data:,">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <main>
+      <div class="debug">
+        <section class="left-panel">
+          <h2>Debug Info</h2>
+          <div id="flags">
+            <p>NV-BDIZC<br>00000000</p>
+          </div>
+          <div id="registers">
+            <h3>Registers</h3>
+            A: <span id="regA">00</span><br>
+            X: <span id="regX">00</span><br>
+            Y: <span id="regY">00</span><br>
+            PC: <span id="regPC">0000</span><br>
+            SP: <span id="regSP">00</span><br>
+            Cycles: <span id="cycles">0</span><br>
+            <h3>Program Counter Memory Dump:</h3>
+            <pre id="memDump"></pre>
+          </div>
+        </section>
+        <div class="memoryDump">
+            <section class="right-panel">
+            <h3>Zero Page Memory Dump:</h3>
+            <pre id="zeroPageDump"></pre>
+            <h3>Stack Page Memory Dump:</h3>
+            <pre id="stackPageDump"></pre>
+            </section>
+        </div>
+      </div>
+    </div>
+    </main>
+    <script type="module" src="sketch.js"></script>
+
+  </body>
+</html>
